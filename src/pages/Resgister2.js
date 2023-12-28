@@ -34,7 +34,7 @@ const Resgister2 = () => {
                     <p className='text-sm text-red-500'></p>
                 </div>
                 <div className='text-right p-3'>
-                    <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' >
+                    <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up3)}>
                         Continue
                         <RightOutlined className='text-xs ml-2' />
                     </button>
