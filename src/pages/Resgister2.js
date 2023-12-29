@@ -40,7 +40,7 @@ const Resgister2 = () => {
                     </button>
                 </div>
             </div>
-            <div className='w-[40%] '>
+            <div className='w-[40%] sm:w-[40%]'>
                 <img className='object-cover w-full h-full' alt='' src='https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/set-up-your-account.png' />
             </div>
         </div>
