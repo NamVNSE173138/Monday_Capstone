@@ -35,7 +35,7 @@ const Register4 = () => {
                         Back
                     </button>
 
-                    <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
+                    <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up5)}>
                         Continue
                         <RightOutlined className='text-xs ml-2' />
                     </button>

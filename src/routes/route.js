@@ -3,6 +3,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Register3 from "../pages/Register3";
 import Register4 from "../pages/Register4";
+import Register5 from "../pages/Register5";
 import Resgister2 from "../pages/Resgister2";
 
 const route = [
@@ -24,6 +25,11 @@ const route = [
     {
         path: PATH.sign_up4,
         component: Register4,
+        exact: true,
+    },
+    {
+        path: PATH.sign_up5,
+        component: Register5,
         exact: true,
     },
     {
