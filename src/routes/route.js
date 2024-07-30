@@ -1,4 +1,5 @@
 import { PATH } from "../config/path";
+import Board from "../pages/Board";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Register3 from "../pages/Register3";
@@ -36,7 +37,12 @@ const route = [
         path: PATH.login,
         component: Login,
         exact: true,
-    }
+    },
+    {
+        path: PATH.board,
+        component: Board,
+        exact: true,
+    },
 ];
 
 export { route };

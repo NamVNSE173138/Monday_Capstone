@@ -1,16 +1,17 @@
 import { DownOutlined, PlusOutlined } from '@ant-design/icons';
 import { Dropdown, Menu, Space } from 'antd';
 import React, { useState } from 'react'
+import { PATH } from '../config/path';
+import { useNavigate } from 'react-router-dom';
 
 const Register5 = () => {
+
+    const navigate = useNavigate();
 
     const items = [
         {
             label: 'Admin',
             key: '0',
-        },
-        {
-            type: 'divider',
         },
         {
             label: 'Member',
@@ -85,7 +86,7 @@ const Register5 = () => {
                     </button>
                 </div>
                 <div className='flex justify-between mt-[30%]'>
-                    <button className='text-center rounded-md mb-4 w-[25%] p-2 mt-2 text-black hover:bg-gray-300 cursor-pointer' >
+                    <button className='text-center rounded-md mb-4 w-[25%] p-2 mt-2 text-black hover:bg-gray-300 cursor-pointer' onClick={() => navigate(PATH.board)}>
                         Remind me later
                     </button>
                     <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
