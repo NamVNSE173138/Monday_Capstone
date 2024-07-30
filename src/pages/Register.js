@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import { PATH } from "../config/path";
+
 
 const Register = () => {
+    const navigate = useNavigate();
     return (
         <div className='flex-1 flex h-screen'>
             <div className='flex-1 p-52'>
@@ -16,7 +20,7 @@ const Register = () => {
                     <div className='flex-1'></div>
                 </div>
                 <input className='border w-full p-2 rounded-md' placeholder='name@company.com' />
-                <button className='rounded-md mb-4 border text-center w-full p-2 mt-4 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
+                <button className='rounded-md mb-4 border text-center w-full p-2 mt-4 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up2)}>
                     Continue
                 </button>
                 <div className='text-center'>By proceeding, you agree to  the</div>
@@ -25,7 +29,7 @@ const Register = () => {
                     <div className='float-left ml-1 mr-1'>and</div>
                     <a className='text-blue-700 hover:underline cursor-pointer flex font-medium' href=''>Privacy Policy</a>
                 </div>
-                <p className='text-center'>Already have an account? <a className='text-blue-700 hover:underline cursor-pointer font-medium'>Log in</a></p>
+                <p className='text-center'>Already have an account? <a className='text-blue-700 hover:underline cursor-pointer font-medium' onClick={() => navigate(PATH.login)}>Log in</a></p>
             </div>
             <div className='w-[40%] '>
                 <img className='object-cover w-full h-full' alt='' src='https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png' />
