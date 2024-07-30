@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Resgister2 from './pages/Resgister2';
 import Register3 from './pages/Register3';
 import Register4 from './pages/Register4';
+import Register5 from './pages/Register5';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Route path={PATH.sign_up2} element={<Resgister2 />} />
         <Route path={PATH.sign_up3} element={<Register3 />} />
         <Route path={PATH.sign_up4} element={<Register4 />} />
+        <Route path={PATH.sign_up5} element={<Register5 />} />
         <Route path={PATH.login} element={<Login />} />
       </Routes>
     </>
