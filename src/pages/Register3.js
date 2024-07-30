@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { RightOutlined } from '@ant-design/icons'
 import { Radio } from 'antd';
+import { useNavigate } from 'react-router-dom';
+import { PATH } from '../config/path';
 
 
 const Register3 = () => {
+    const navigate = useNavigate();
     const [value, setValue] = useState();
     const [subcategory, setSubcategory] = useState();
     const onChange = (e) => {
@@ -48,7 +51,7 @@ const Register3 = () => {
                             </Radio.Group>
                         </div>
                         <div className='text-right p-3 mt-36'>
-                            <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
+                            <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up4)}>
                                 Continue
                                 <RightOutlined className='text-xs ml-2' />
                             </button>
@@ -57,7 +60,7 @@ const Register3 = () => {
                 )}
                 {value === 'personal' && (
                     <div className='text-right p-3 mt-[355.5px]'>
-                        <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
+                        <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up4)}>
                             Continue
                             <RightOutlined className='text-xs ml-2' />
                         </button>
@@ -75,7 +78,7 @@ const Register3 = () => {
                             </Radio.Group>
                         </div>
                         <div className='text-right p-3 mt-48'>
-                            <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
+                            <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up4)}>
                                 Continue
                                 <RightOutlined className='text-xs ml-2' />
                             </button>
@@ -96,7 +99,7 @@ const Register3 = () => {
                             </Radio.Group>
                         </div>
                         <div className='text-right p-3 mt-36'>
-                            <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer'>
+                            <button className='text-center rounded-md mb-4 border w-[20%] p-2 mt-2 bg-blue-600 text-white hover:bg-blue-800 cursor-pointer' onClick={() => navigate(PATH.sign_up4)}>
                                 Continue
                                 <RightOutlined className='text-xs ml-2' />
                             </button>
